@@ -1,3 +1,71 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://www.robmeyer.github.io"
+title = "Rob Meyer"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+#disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Rob Meyer"
+    info = "dev, cyclist, father, maker, photographer..."
+    description = "Rob Meyer's personal website"
+    keywords = "blog,developer,personal"
+    avatarurl = "images/avatar.jpg"
+
+#    favicon_32 = "/img/favicon-32x32.png"
+#    favicon_16 = "/img/favicon-16x16.png"
+
+ #   footercontent = "Enter a text here."
+
+    hidecredits = true
+    hidecopyright = true
+
+    rtl = false
+
+    math = true
+    custom_css = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/robmeyer/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 2
+    url = "https://www.linkedin.com/in/rob-meyer/"
+[[params.social]]
+    name = "Instagram"
+    icon = "fab fa-instagram fa-2x"
+    weight = 2
+    url = "https://www.instagram.com/robmeyer/"
+[[params.social]]
+    name = "Strava"
+    icon = "fab fa-strava fa-2x"
+    weight = 2
+    url = "https://www.strava.com/athletes/6106508"
+[[params.social]]
+    name = "Thingiverse"
+    icon = "fas fa-hammer fa-2x"
+    weight = 2
+    url = "https://www.thingiverse.com/RobMeyer/about"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
