@@ -15,6 +15,9 @@ CanonifyURLs = true
 
 #disqusShortname = "yourdiscussshortname"
 
+[Permalinks] # https://gohugo.io/content-management/urls/#permalinks
+    posts = ":year/:month/:filename"
+
 [params]
     author = "Rob Meyer"
     info = "dev, cyclist, father, maker, photographer..."
