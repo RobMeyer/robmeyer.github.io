@@ -10,7 +10,8 @@ canonifyurls = true
 pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-relativeURLs = true
+RelativeURLs = true
+CanonifyURLs=true
 
 #disqusShortname = "yourdiscussshortname"
 
