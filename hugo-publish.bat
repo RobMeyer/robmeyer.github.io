@@ -8,7 +8,7 @@ git rm -rf *
 popd
 
 echo "Building the website"
-hugo
+hugo --minify
 
 echo "Pushing the updated \`public\` folder to the \`master\` branch"
 pushd public
