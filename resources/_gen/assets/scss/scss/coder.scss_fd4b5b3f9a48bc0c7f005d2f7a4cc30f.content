@@ -10,7 +10,7 @@ html {
 body {
   color: #212121;
   background-color: #FAFAFA;
-  font-family: Merriweather, Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.8em; }
@@ -18,7 +18,6 @@ body {
     body {
       font-size: 1.6em;
       line-height: 1.6em; } }
-
 a {
   font-weight: 300;
   color: #1565c0;
@@ -35,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 700;
   color: #000;
   margin: 6.4rem 0 3.2rem 0; }
@@ -47,7 +46,6 @@ h1 {
     h1 {
       font-size: 3.0rem;
       line-height: 3.4rem; } }
-
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem; }
@@ -55,7 +53,6 @@ h2 {
     h2 {
       font-size: 2.6rem;
       line-height: 3.0rem; } }
-
 h3 {
   font-size: 2.4rem;
   line-height: 2.8rem; }
@@ -63,7 +60,6 @@ h3 {
     h3 {
       font-size: 2.2rem;
       line-height: 2.6rem; } }
-
 h4 {
   font-size: 2.2rem;
   line-height: 2.6rem; }
@@ -71,7 +67,6 @@ h4 {
     h4 {
       font-size: 2.0rem;
       line-height: 2.4rem; } }
-
 h5 {
   font-size: 2.0rem;
   line-height: 2.4rem; }
@@ -79,7 +74,6 @@ h5 {
     h5 {
       font-size: 1.8rem;
       line-height: 2.2rem; } }
-
 h6 {
   font-size: 1.8rem;
   line-height: 2.2rem; }
@@ -87,7 +81,6 @@ h6 {
     h6 {
       font-size: 1.6rem;
       line-height: 2.0rem; } }
-
 b, strong {
   font-weight: 700; }
 
@@ -99,7 +92,7 @@ b, strong {
 
 pre {
   display: block;
-  font-family: "Source Code Pro", "Lucida Console", monospace;
+  font-family: "Courier New", monospace;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -111,7 +104,7 @@ pre {
     color: inherit; }
 
 code {
-  font-family: "Source Code Pro", "Lucida Console", monospace;
+  font-family: "Courier New", monospace;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: #E0E0E0;
@@ -229,7 +222,6 @@ img {
   @media only screen and (max-width: 768px) {
     .avatar img {
       width: 10rem; } }
-
 .list ul {
   margin: 3.2rem 0 3.2rem 0;
   list-style: none;
@@ -251,7 +243,7 @@ img {
     .list ul li .title {
       font-size: 1.8rem;
       color: #212121;
-      font-family: Lato, Helvetica, sans-serif;
+      font-family: Helvetica, sans-serif;
       font-weight: 700; }
       .list ul li .title:hover, .list ul li .title:focus {
         color: #1565c0; }
@@ -308,14 +300,13 @@ img {
       @media only screen and (max-width: 768px) {
         .centered .error h2 {
           font-size: 2.8rem; } }
-
 .navigation {
   height: 6.0rem;
   width: 100%; }
   .navigation a, .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: 700;
     line-height: 6.0rem;
     color: #212121; }
@@ -384,11 +375,10 @@ img {
         cursor: pointer; }
         .navigation .menu-button:hover, .navigation .menu-button:focus {
           color: #1565c0; } }
-
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
-  font-family: Lato, Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif; }
   .pagination li {
     display: inline;
     text-align: center;
