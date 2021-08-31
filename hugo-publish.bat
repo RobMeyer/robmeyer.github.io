@@ -4,6 +4,7 @@ set commitMessage="site rebuild: %today%"
 echo %commitMessage%
 echo "Removing the old website"
 pushd public
+git pull
 git rm -rf *
 popd
 
@@ -14,5 +15,5 @@ echo "Pushing the updated \`public\` folder to the \`master\` branch"
 pushd public
 git add *
 git commit -m %commitMessage%
+git push
 popd
-git push origin master
