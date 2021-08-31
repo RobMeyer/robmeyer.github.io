@@ -34,6 +34,8 @@ CanonifyURLs = true
     rtl = false
 
     math = true
+
+    colorscheme = "auto"
     custom_css = ["css/custom.css"]
 
 # Social links
