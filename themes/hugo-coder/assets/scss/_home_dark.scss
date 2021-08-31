@@ -1,0 +1,37 @@
+@mixin home_dark {
+    a.nav {
+            color: $alt-fg-color-dark;
+            margin:0 0 0 15px;
+            padding:8px;
+            text-decoration:none;
+            border-radius:4px;
+            border: 1px solid $alt-fg-color-dark;
+            line-height: 3em;
+
+            &:visited {
+                color: $alt-fg-color-dark;
+            }
+    }
+
+    a.nav:hover
+    {
+            color:#134;
+            box-shadow: 2px 2px $alt-fg-color-dark;
+            border-bottom: 3px solid $alt-fg-color-dark;
+            text-decoration: none;
+
+            &:visited {
+                color: $alt-fg-color-dark;
+            }
+    }
+}
+
+body.colorscheme-dark {
+    @include home_dark()
+}
+
+body.colorscheme-auto {
+    @media (prefers-color-scheme: dark) {
+        @include home_dark()
+    }
+}
