@@ -273,7 +273,6 @@ img {
         position: relative; }
         .centered .about ul li a {
           color: #212121;
-          text-transform: uppercase;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem; }

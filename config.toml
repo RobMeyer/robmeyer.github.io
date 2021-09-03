@@ -41,27 +41,27 @@ CanonifyURLs = true
 # Social links
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github fa-2x"
+    icon = "👨🏻‍💻 Github"
     weight = 1
     url = "https://github.com/robmeyer/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
+    icon = "📄 LinkedIn"
     weight = 2
     url = "https://www.linkedin.com/in/rob-meyer/"
 [[params.social]]
     name = "Instagram"
-    icon = "fab fa-instagram fa-2x"
+    icon = "📸 Instagram"
     weight = 2
     url = "https://www.instagram.com/robmeyer/"
 [[params.social]]
     name = "Strava"
-    icon = "fab fa-strava fa-2x"
+    icon = "🚲 Strava"
     weight = 2
     url = "https://www.strava.com/athletes/6106508"
 [[params.social]]
     name = "Thingiverse"
-    icon = "fas fa-hammer fa-2x"
+    icon = "🛠️ Thingiverse"
     weight = 2
     url = "https://www.thingiverse.com/RobMeyer/about"
 

@@ -6,7 +6,7 @@
     <h1>{{ .Site.Params.author }}</h1>
     <h2 style="padding: 20px 0">
       <a class="nav" href="https://github.com/RobMeyer">👨🏻‍💻&nbsp;dev</a>
-      <a class="nav" href="https://www.strava.com/athletes/6106508">🚴🏻‍♂️&nbsp;cyclist</a>
+      <a class="nav" href="/cyclist">🚴🏻‍♂️&nbsp;cyclist</a>
       <a class="nav" href="/maker/">🛠️&nbsp;maker</a>
       <a class="nav" href="/photographer/">📸&nbsp;photographer</a>
     </h2>
@@ -17,9 +17,7 @@
         {{ range sort . "weight" }}
           {{ if .icon }}
             <li>
-              <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-                <i class="{{ .icon }}" aria-hidden="true"></i>
-              </a>
+              <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>{{ .icon }}</a>
             </li>
           {{ else }}
             <li>
