@@ -90,7 +90,7 @@
   {{ else if eq .Site.Params.colorscheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}" style="margin: 0">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
