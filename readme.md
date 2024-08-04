@@ -1,17 +1,3 @@
-<style type="text/css">
-   /* Indent Formatting */
-   /* Format: a-1-i-A-1-I */
-   ol {list-style-type: decimal;}
-   ol ol { list-style-type: lower-alpha;}
-   ol ol ol { list-style-type: lower-roman;}
-   ol ol ol ol { list-style-type: decimal;}
-   ol ol ol ol ol { list-style-type: upper-alpha;}
-   ol ol ol ol ol ol { list-style-type: upper-roman;}
-   /* https://www.w3schools.com/cssref/pr_list-style-type.asp */
-   /* https://stackoverflow.com/questions/11445453/css-set-li-indent */
-   /* https://stackoverflow.com/questions/13366820/how-do-you-make-lettered-lists-using-markdown */
-</style> 
-
 # About this repo
 1. This static site is generated using [Hugo](https://gohugo.io)
     1. run `hugo server` to start the local server
