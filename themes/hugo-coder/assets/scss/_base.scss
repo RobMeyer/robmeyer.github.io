@@ -4,6 +4,10 @@
   box-sizing: inherit;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
