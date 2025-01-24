@@ -1,26 +1,33 @@
-a.nav
-{
-        color: $alt-fg-color;
-        margin:0 0 0 15px;
-        padding:8px;
-        text-decoration:none;
-        border-radius:4px;
-        border: 1px solid $alt-fg-color;
-        line-height: 3em;
+a.nav {
+    font-weight: 400;
+    color: $alt-fg-color;
+    margin: 0 8px 0 8px;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid $alt-fg-color;
+    line-height: 3em;
+    white-space: nowrap;
 
-        &:visited {
-            color: $alt-fg-color;
-        }
+    @media only screen and (max-width : 768px) {
+        margin: 0 4px 0 4px;
+    }
+
+    & .emoji {
+        background-color: $bg-light-color;
+        border-radius: 50%;
+        padding: 6px;
+        margin: 4px 4px 4px 0;
+    }
 }
 
-a.nav:hover
-{
-        color:#134;
-        box-shadow: 2px 2px $alt-fg-color;
-        border-bottom: 3px solid $alt-fg-color;
-        text-decoration: none;
+a.nav:hover {
+    color: #134;
+    box-shadow: 2px 2px $alt-fg-color;
+    border-bottom: 3px solid $alt-fg-color;
+    text-decoration: none;
 
-        &:visited {
-            color: $alt-fg-color;
-        }
+    &:visited {
+        color: $alt-fg-color;
+    }
 }

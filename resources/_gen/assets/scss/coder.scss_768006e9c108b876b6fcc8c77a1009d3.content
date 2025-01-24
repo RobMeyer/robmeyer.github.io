@@ -37,7 +37,7 @@ h6 {
   font-family: Helvetica, sans-serif;
   font-weight: 600;
   color: #000;
-  margin: 6.4rem 0 3.2rem 0; }
+  margin: 1rem 0 .5rem 0; }
 
 h1 {
   font-size: 3.2rem;
@@ -81,7 +81,8 @@ h6 {
     h6 {
       font-size: 1.6rem;
       line-height: 2.0rem; } }
-b, strong {
+b,
+strong {
   font-weight: 700; }
 
 .highlight > div,
@@ -117,13 +118,15 @@ blockquote {
   font-weight: 400;
   font-style: italic; }
 
-th, td {
+th,
+td {
   padding: 1.6rem; }
 
 table {
   border-collapse: collapse; }
 
-table td, table th {
+table td,
+table th {
   border: 2px solid #000; }
 
 table tr:first-child th {
@@ -146,7 +149,7 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100svh;
   width: 100%; }
 
 .container {
@@ -179,8 +182,8 @@ img {
   display: flex;
   margin-top: 1.6rem; }
   .content article header {
-    margin-top: 6.4rem;
-    margin-bottom: 3.2rem; }
+    margin-top: 1rem;
+    margin-bottom: .5rem; }
     .content article header h1 {
       font-size: 4.2rem;
       line-height: 4.6rem;
@@ -253,6 +256,7 @@ img {
   align-items: center;
   justify-content: center; }
   .centered .about {
+    font-family: Helvetica, sans-serif;
     text-align: center; }
     .centered .about h1 {
       margin-top: 2.0rem;
@@ -266,7 +270,7 @@ img {
           font-size: 2.0rem; } }
     .centered .about ul {
       list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
+      margin: 1.0rem 0 1.0rem 0;
       padding: 0; }
       .centered .about ul li {
         display: inline-block;
@@ -302,7 +306,8 @@ img {
 .navigation {
   height: 6.0rem;
   width: 100%; }
-  .navigation a, .navigation span {
+  .navigation a,
+  .navigation span {
     display: inline;
     font-size: 1.6rem;
     font-family: Helvetica, sans-serif;
@@ -312,41 +317,23 @@ img {
   .navigation a:hover, .navigation a:focus {
     color: #1565c0; }
   .navigation .navigation-title {
-    letter-spacing: 0.1rem;
-    text-transform: uppercase; }
+    letter-spacing: 0.05rem; }
   .navigation .navigation-list {
     float: right;
     list-style: none;
     margin-bottom: 0;
-    margin-top: 0; }
-    @media only screen and (max-width: 768px) {
-      .navigation .navigation-list {
-        position: absolute;
-        top: 6.0rem;
-        right: 0;
-        z-index: 5;
-        visibility: hidden;
-        opacity: 0;
-        padding: 0;
-        max-height: 0;
-        width: 100%;
-        background-color: #FAFAFA;
-        border-top: solid 2px #E0E0E0;
-        border-bottom: solid 2px #E0E0E0;
-        transition: opacity 0.25s, max-height 0.15s linear; } }
+    margin-top: 0;
+    letter-spacing: 0.05rem; }
     .navigation .navigation-list .navigation-item {
       float: left;
       margin: 0;
       position: relative; }
-      @media only screen and (max-width: 768px) {
-        .navigation .navigation-list .navigation-item {
-          float: none !important;
-          text-align: center; }
-          .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
-            line-height: 5.0rem; } }
-      .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
+      .navigation .navigation-list .navigation-item a,
+      .navigation .navigation-list .navigation-item span {
         margin-left: 1.0rem;
         margin-right: 1.0rem; }
+      .navigation .navigation-list .navigation-item .navigation-link.active {
+        text-decoration: underline; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list .menu-separator {
         border-top: 2px solid #212121;
@@ -402,15 +389,23 @@ img {
     color: #1565c0; }
 
 a.nav {
+  font-weight: 400;
   color: #000;
-  margin: 0 0 0 15px;
+  margin: 0 8px 0 8px;
   padding: 8px;
   text-decoration: none;
   border-radius: 4px;
   border: 1px solid #000;
-  line-height: 3em; }
-  a.nav:visited {
-    color: #000; }
+  line-height: 3em;
+  white-space: nowrap; }
+  @media only screen and (max-width: 768px) {
+    a.nav {
+      margin: 0 4px 0 4px; } }
+  a.nav .emoji {
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 4px 4px 4px 0; }
 
 a.nav:hover {
   color: #134;
