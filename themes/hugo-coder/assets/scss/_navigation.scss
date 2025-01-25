@@ -6,17 +6,17 @@
   span {
     display: inline;
     font-size: 1.6rem;
-    font-family: $heading-font-family;
+    font-family: var(--heading-font-family);
     font-weight: 700;
     line-height: 6.0rem;
-    color: $fg-color;
+    color: var(--fg-color);
   }
 
   a {
 
     &:hover,
     &:focus {
-      color: $link-color
+      color: var(--link-color)
     }
   }
 
@@ -52,7 +52,7 @@
 
     .menu-separator {
       @media only screen and (max-width : 768px) {
-        border-top: 2px solid $fg-color;
+        border-top: 2px solid var(--fg-color);
         margin: 0 8.0rem;
 
         span {
@@ -67,7 +67,7 @@
 
     @media only screen and (max-width : 768px) {
       &:checked+label {
-        color: $alt-bg-color;
+        color: var(--alt-bg-color);
       }
 
       &:checked+label+ul {
@@ -86,12 +86,12 @@
       font-size: 2.4rem;
       font-weight: 400;
       line-height: 6.0rem;
-      color: $fg-color;
+      color: var(--fg-color);
       cursor: pointer;
 
       &:hover,
       &:focus {
-        color: $link-color
+        color: var(--link-color)
       }
     }
   }

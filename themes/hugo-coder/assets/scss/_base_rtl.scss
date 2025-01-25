@@ -7,7 +7,7 @@ body.rtl {
 
   blockquote {
     border-left: none;
-    border-right: 2px solid $alt-bg-color;
+    border-right: 2px solid var(--alt-bg-color);
     padding-left: 0;
     padding-right: 1.6rem;
   }
@@ -16,6 +16,7 @@ body.rtl {
   table tr th:first-child {
     border-right: 0;
   }
+
   table tr td:last-child,
   table tr th:last-child {
     border-left: 0;

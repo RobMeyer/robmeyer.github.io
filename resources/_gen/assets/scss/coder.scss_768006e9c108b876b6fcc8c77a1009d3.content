@@ -1,3 +1,23 @@
+:root {
+  --text-font-family: Georgia, serif;
+  --heading-font-family: Helvetica, sans-serif;
+  --code-font-family: 'Courier New', monospace;
+  --bg-color: #FAFAFA;
+  --fg-color: #212121;
+  --alt-bg-color: #E0E0E0;
+  --alt-fg-color: #000;
+  --link-color: #1565c0;
+  --bg-light-color: #FAFAFA;
+  --code-bg-color: #FAFAFA; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #212121;
+      --fg-color: #dadada;
+      --alt-bg-color: #424242;
+      --alt-fg-color: #dadada;
+      --link-color: #36679f;
+      --bg-light-color: #dadada2f;
+      --code-bg-color: #212121; } }
 *,
 *:after,
 *:before {
@@ -11,9 +31,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #212121;
-  background-color: #FAFAFA;
-  font-family: Georgia, serif;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  font-family: var(--text-font-family);
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.8em; }
@@ -23,7 +43,7 @@ body {
       line-height: 1.6em; } }
 a {
   font-weight: 300;
-  color: #1565c0;
+  color: var(--link-color);
   text-decoration: none; }
   a:focus, a:hover {
     text-decoration: underline; }
@@ -37,9 +57,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 600;
-  color: #000;
+  color: var(--alt-fg-color);
   margin: 1rem 0 .5rem 0; }
 
 h1 {
@@ -96,7 +116,8 @@ strong {
 
 pre {
   display: block;
-  font-family: "Courier New", monospace;
+  background-color: var(--alt-bg-color) !important;
+  font-family: var(--code-font-family);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -104,18 +125,16 @@ pre {
   margin: 0; }
   pre code {
     display: inline-block;
-    background-color: inherit;
     color: inherit; }
 
 code {
-  font-family: "Courier New", monospace;
+  font-family: var(--code-font-family);
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #E0E0E0;
-  color: #212121; }
+  color: var(--fg-color); }
 
 blockquote {
-  border-left: 2px solid #E0E0E0;
+  border-left: 2px solid var(--alt-bg-color);
   padding-left: 2.0rem;
   line-height: 2.2rem;
   font-weight: 400;
@@ -130,7 +149,7 @@ table {
 
 table td,
 table th {
-  border: 2px solid #000; }
+  border: 2px solid var(--alt-fg-color); }
 
 table tr:first-child th {
   border-top: 0; }
@@ -247,11 +266,11 @@ img {
           text-align: left; } }
     .list ul li .title {
       font-size: 1.8rem;
-      color: #212121;
-      font-family: Helvetica, sans-serif;
+      color: var(--fg-color);
+      font-family: var(--heading-font-family);
       font-weight: 700; }
       .list ul li .title:hover, .list ul li .title:focus {
-        color: #1565c0; }
+        color: var(--link-color); }
 
 .centered {
   display: flex;
@@ -259,7 +278,7 @@ img {
   align-items: center;
   justify-content: center; }
   .centered .about {
-    font-family: Helvetica, sans-serif;
+    font-family: var(--heading-font-family);
     text-align: center; }
     .centered .about h1 {
       margin-top: 2.0rem;
@@ -279,12 +298,12 @@ img {
         display: inline-block;
         position: relative; }
         .centered .about ul li a {
-          color: #212121;
+          color: var(--fg-color);
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem; }
           .centered .about ul li a:hover, .centered .about ul li a:focus {
-            color: #1565c0; }
+            color: var(--link-color); }
           @media only screen and (max-width: 768px) {
             .centered .about ul li a {
               font-size: 1.4rem; } }
@@ -313,12 +332,12 @@ img {
   .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Helvetica, sans-serif;
+    font-family: var(--heading-font-family);
     font-weight: 700;
     line-height: 6.0rem;
-    color: #212121; }
+    color: var(--fg-color); }
   .navigation a:hover, .navigation a:focus {
-    color: #1565c0; }
+    color: var(--link-color); }
   .navigation .navigation-title {
     letter-spacing: 0.05rem; }
   .navigation .navigation-list {
@@ -339,7 +358,7 @@ img {
         text-decoration: underline; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list .menu-separator {
-        border-top: 2px solid #212121;
+        border-top: 2px solid var(--fg-color);
         margin: 0 8.0rem; }
         .navigation .navigation-list .menu-separator span {
           display: none; } }
@@ -347,7 +366,7 @@ img {
     display: none; }
     @media only screen and (max-width: 768px) {
       .navigation #menu-toggle:checked + label {
-        color: #E0E0E0; }
+        color: var(--alt-bg-color); }
       .navigation #menu-toggle:checked + label + ul {
         visibility: visible;
         opacity: 1;
@@ -360,14 +379,14 @@ img {
         font-size: 2.4rem;
         font-weight: 400;
         line-height: 6.0rem;
-        color: #212121;
+        color: var(--fg-color);
         cursor: pointer; }
         .navigation .menu-button:hover, .navigation .menu-button:focus {
-          color: #1565c0; } }
+          color: var(--link-color); } }
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
-  font-family: Helvetica, sans-serif; }
+  font-family: var(--heading-font-family); }
   .pagination li {
     display: inline;
     text-align: center;
@@ -389,33 +408,33 @@ img {
   line-height: 2.0rem;
   margin-bottom: 1.0rem; }
   .footer a {
-    color: #1565c0; }
+    color: var(--link-color); }
 
 a.nav {
   font-weight: 400;
-  color: #000;
+  color: var(--alt-fg-color);
   margin: 0 8px 0 8px;
   padding: 8px;
   text-decoration: none;
   border-radius: 4px;
-  border: 1px solid #000;
+  border: 1px solid var(--alt-fg-color);
   line-height: 3em;
   white-space: nowrap; }
   @media only screen and (max-width: 768px) {
     a.nav {
       margin: 0 4px 0 4px; } }
   a.nav .emoji {
-    background-color: #FAFAFA;
+    background-color: var(--bg-light-color);
     border-radius: 50%;
     padding: 6px;
     margin: 4px 4px 4px 0; }
 
 a.nav:hover {
   color: #134;
-  box-shadow: 2px 2px #000;
-  border-bottom: 3px solid #000;
+  box-shadow: 2px 2px var(--alt-fg-color);
+  border-bottom: 3px solid var(--alt-fg-color);
   text-decoration: none; }
   a.nav:hover:visited {
-    color: #000; }
+    color: var(--alt-fg-color); }
 
 /*# sourceMappingURL=coder.css.map */

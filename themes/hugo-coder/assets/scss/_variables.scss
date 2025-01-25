@@ -1,20 +1,25 @@
-// Fonts
-$text-font-family: Georgia, serif;
-$heading-font-family: Helvetica, sans-serif;
-$code-font-family: 'Courier New', monospace;
+:root {
+    --text-font-family: Georgia, serif;
+    --heading-font-family: Helvetica, sans-serif;
+    --code-font-family: 'Courier New', monospace;
 
-// Colors
-$bg-color: #FAFAFA !default;
-$fg-color: #212121 !default;
-$alt-bg-color: #E0E0E0 !default;
-$alt-fg-color: #000 !default;
-$link-color: #1565c0 !default;
-$bg-light-color: #FAFAFA !default;
+    // light mode colors
+    --bg-color: #FAFAFA;
+    --fg-color: #212121;
+    --alt-bg-color: #E0E0E0;
+    --alt-fg-color: #000;
+    --link-color: #1565c0;
+    --bg-light-color: #FAFAFA;
+    --code-bg-color: #FAFAFA;
 
-// Colors dark
-$bg-color-dark: #212121 !default;
-$fg-color-dark: #dadada !default;
-$alt-bg-color-dark: #424242 !default;
-$alt-fg-color-dark: #dadada !default;
-$link-color-dark: #36679f !default;
-$bg-light-color: #dadada2f !default;
+    // dark mode overrides
+    @media (prefers-color-scheme: dark) {
+        --bg-color: #212121;
+        --fg-color: #dadada;
+        --alt-bg-color: #424242;
+        --alt-fg-color: #dadada;
+        --link-color: #36679f;
+        --bg-light-color: #dadada2f;
+        --code-bg-color: #212121;
+    }
+}
