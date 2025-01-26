@@ -15,7 +15,7 @@
       --fg-color: #dadada;
       --alt-bg-color: #424242;
       --alt-fg-color: #dadada;
-      --link-color: #36679f;
+      --link-color: #4493f8;
       --bg-light-color: #dadada2f;
       --code-bg-color: #212121; } }
 *,
@@ -300,7 +300,8 @@ img {
         .centered .error h2 {
           font-size: 2.8rem; } }
 .navigation {
-  height: 6.0rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%; }
   .navigation a,
   .navigation span {
@@ -308,7 +309,7 @@ img {
     font-size: 1.6rem;
     font-family: var(--heading-font-family);
     font-weight: 700;
-    line-height: 6.0rem;
+    line-height: 1.2rem;
     color: var(--fg-color); }
   .navigation a:hover, .navigation a:focus {
     color: var(--link-color); }
@@ -328,8 +329,20 @@ img {
       .navigation .navigation-list .navigation-item span {
         margin-left: 1.0rem;
         margin-right: 1.0rem; }
-      .navigation .navigation-list .navigation-item .navigation-link.active {
-        text-decoration: underline; }
+      .navigation .navigation-list .navigation-item a:hover {
+        color: var(--fg-color);
+        text-decoration: none; }
+      .navigation .navigation-list .navigation-item .navigation-link.active::before {
+        view-transition-name: active-nav-link;
+        content: '';
+        display: block;
+        width: calc(100% - 2rem);
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: var(--fg-color);
+        position: absolute;
+        bottom: 0;
+        left: 1rem; }
     @media only screen and (max-width: 768px) {
       .navigation .navigation-list .menu-separator {
         border-top: 2px solid var(--fg-color);
