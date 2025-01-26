@@ -49,20 +49,18 @@
         text-decoration: none;
       }
 
-      .navigation-link {
-        &.active::before {
-          view-transition-name: active-nav-link;
+      .navigation-link.active::before {
+        view-transition-name: active-nav-link;
 
-          content: '';
-          display: block;
-          width: calc(100% - 2rem);
-          height: 3px;
-          border-radius: 1.5px;
-          background-color: var(--fg-color);
-          position: absolute;
-          bottom: 0;
-          left: 1rem;
-        }
+        content: '';
+        display: block;
+        width: calc(100% - 2rem);
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: var(--fg-color);
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
       }
     }
 
@@ -111,4 +109,12 @@
       }
     }
   }
+}
+
+::view-transition-group(active-nav-link),
+::view-transition-old(active-nav-link),
+::view-transition-new(active-nav-link) {
+  animation-duration: 750ms;
+  animation-timing-function: ease;
+  animation-timing-function: linear(0, 0.009 1%, 0.035 2%, 0.139 4.2%, 0.277 6.3%, 0.72 12.3%, 0.841 14.2%, 0.939 16%, 1.018 17.8%, 1.079 19.6%, 1.122 21.4%, 1.149 23.3%, 1.162 25.8%, 1.153 28.6%, 1.017 41.2%, 0.99 45%, 0.977 48.9%, 0.975 54.6%, 1.003 73.8%, 1)
 }
