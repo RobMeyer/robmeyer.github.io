@@ -126,37 +126,6 @@ strong {
   border-radius: 1rem;
 }
 
-pre {
-  display: block;
-  background-color: var(--alt-bg-color) !important; // TODO: figure out why Hugo's markdown processor generates an inline style with background-color: #fff
-  font-family: var(--code-font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.6rem;
-  overflow-x: auto;
-  margin: 0;
-
-  code {
-    display: inline-block;
-    color: inherit;
-  }
-}
-
-code {
-  font-family: var(--code-font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--fg-color);
-}
-
-blockquote {
-  border-left: 2px solid var(--alt-bg-color);
-  padding-left: 2.0rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  font-style: italic;
-}
-
 th,
 td {
   padding: 1.6rem;

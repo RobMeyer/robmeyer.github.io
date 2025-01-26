@@ -5,15 +5,30 @@ languagecode = "en"
 defaultcontentlanguage = "en"
 
 pagination.pagerSize = 20
-canonifyurls = true
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
 RelativeURLs = true
 CanonifyURLs = true
 
-#disqusShortname = "yourdiscussshortname"
+
+pygmentsUseClassic            = false
+pygmentsCodeFences            = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsUseClasses            = true 
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false # prevents inline styles; css styles defined in themes/hugo-coder/assets/scss/_chroma.scss
+    tabWidth = 4
+    wrapperClass = 'highlight'
 
 [Permalinks] # https://gohugo.io/content-management/urls/#permalinks
     posts = ":year/:month/:filename"

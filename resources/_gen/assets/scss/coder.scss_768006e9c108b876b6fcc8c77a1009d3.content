@@ -114,32 +114,6 @@ strong {
   padding: 1rem;
   border-radius: 1rem; }
 
-pre {
-  display: block;
-  background-color: var(--alt-bg-color) !important;
-  font-family: var(--code-font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.6rem;
-  overflow-x: auto;
-  margin: 0; }
-  pre code {
-    display: inline-block;
-    color: inherit; }
-
-code {
-  font-family: var(--code-font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--fg-color); }
-
-blockquote {
-  border-left: 2px solid var(--alt-bg-color);
-  padding-left: 2.0rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  font-style: italic; }
-
 th,
 td {
   padding: 1.6rem; }
@@ -402,6 +376,446 @@ img {
         text-align: center;
         width: 3.2rem; }
 
+.highlight {
+  /* Light mode */
+  /* Generated using: hugo gen chromastyles --style=vs */
+  /* Background */
+  /* PreWrapper */
+  /* Other */
+  /* Error */
+  /* CodeLine */
+  /* LineLink */
+  /* LineTableTD */
+  /* LineTable */
+  /* LineHighlight */
+  /* LineNumbersTable */
+  /* LineNumbers */
+  /* Line */
+  /* Keyword */
+  /* KeywordConstant */
+  /* KeywordDeclaration */
+  /* KeywordNamespace */
+  /* KeywordPseudo */
+  /* KeywordReserved */
+  /* KeywordType */
+  /* Name */
+  /* NameAttribute */
+  /* NameBuiltin */
+  /* NameBuiltinPseudo */
+  /* NameClass */
+  /* NameConstant */
+  /* NameDecorator */
+  /* NameEntity */
+  /* NameException */
+  /* NameFunction */
+  /* NameFunctionMagic */
+  /* NameLabel */
+  /* NameNamespace */
+  /* NameOther */
+  /* NameProperty */
+  /* NameTag */
+  /* NameVariable */
+  /* NameVariableClass */
+  /* NameVariableGlobal */
+  /* NameVariableInstance */
+  /* NameVariableMagic */
+  /* Literal */
+  /* LiteralDate */
+  /* LiteralString */
+  /* LiteralStringAffix */
+  /* LiteralStringBacktick */
+  /* LiteralStringChar */
+  /* LiteralStringDelimiter */
+  /* LiteralStringDoc */
+  /* LiteralStringDouble */
+  /* LiteralStringEscape */
+  /* LiteralStringHeredoc */
+  /* LiteralStringInterpol */
+  /* LiteralStringOther */
+  /* LiteralStringRegex */
+  /* LiteralStringSingle */
+  /* LiteralStringSymbol */
+  /* LiteralNumber */
+  /* LiteralNumberBin */
+  /* LiteralNumberFloat */
+  /* LiteralNumberHex */
+  /* LiteralNumberInteger */
+  /* LiteralNumberIntegerLong */
+  /* LiteralNumberOct */
+  /* Operator */
+  /* OperatorWord */
+  /* Punctuation */
+  /* Comment */
+  /* CommentHashbang */
+  /* CommentMultiline */
+  /* CommentSingle */
+  /* CommentSpecial */
+  /* CommentPreproc */
+  /* CommentPreprocFile */
+  /* Generic */
+  /* GenericDeleted */
+  /* GenericEmph */
+  /* GenericError */
+  /* GenericHeading */
+  /* GenericInserted */
+  /* GenericOutput */
+  /* GenericPrompt */
+  /* GenericStrong */
+  /* GenericSubheading */
+  /* GenericTraceback */
+  /* GenericUnderline */
+  /* TextWhitespace */ }
+  .highlight .bg {
+    background-color: #fff; }
+  .highlight .chroma {
+    background-color: #fff; }
+  .highlight .chroma .lnlinks {
+    outline: none;
+    text-decoration: none;
+    color: inherit; }
+  .highlight .chroma .lntd {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  .highlight .chroma .lntable {
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  .highlight .chroma .hl {
+    background-color: #e5e5e5; }
+  .highlight .chroma .lnt {
+    white-space: pre;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  .highlight .chroma .ln {
+    white-space: pre;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+    color: #7f7f7f; }
+  .highlight .chroma .line {
+    display: flex; }
+  .highlight .chroma .k {
+    color: #00f; }
+  .highlight .chroma .kc {
+    color: #00f; }
+  .highlight .chroma .kd {
+    color: #00f; }
+  .highlight .chroma .kn {
+    color: #00f; }
+  .highlight .chroma .kp {
+    color: #00f; }
+  .highlight .chroma .kr {
+    color: #00f; }
+  .highlight .chroma .kt {
+    color: #2b91af; }
+  .highlight .chroma .nc {
+    color: #2b91af; }
+  .highlight .chroma .s {
+    color: #a31515; }
+  .highlight .chroma .sa {
+    color: #a31515; }
+  .highlight .chroma .sb {
+    color: #a31515; }
+  .highlight .chroma .sc {
+    color: #a31515; }
+  .highlight .chroma .dl {
+    color: #a31515; }
+  .highlight .chroma .sd {
+    color: #a31515; }
+  .highlight .chroma .s2 {
+    color: #a31515; }
+  .highlight .chroma .se {
+    color: #a31515; }
+  .highlight .chroma .sh {
+    color: #a31515; }
+  .highlight .chroma .si {
+    color: #a31515; }
+  .highlight .chroma .sx {
+    color: #a31515; }
+  .highlight .chroma .sr {
+    color: #a31515; }
+  .highlight .chroma .s1 {
+    color: #a31515; }
+  .highlight .chroma .ss {
+    color: #a31515; }
+  .highlight .chroma .ow {
+    color: #00f; }
+  .highlight .chroma .c {
+    color: #008000; }
+  .highlight .chroma .ch {
+    color: #008000; }
+  .highlight .chroma .cm {
+    color: #008000; }
+  .highlight .chroma .c1 {
+    color: #008000; }
+  .highlight .chroma .cs {
+    color: #008000; }
+  .highlight .chroma .cp {
+    color: #00f; }
+  .highlight .chroma .cpf {
+    color: #00f; }
+  .highlight .chroma .ge {
+    font-style: italic; }
+  .highlight .chroma .gh {
+    font-weight: bold; }
+  .highlight .chroma .gp {
+    font-weight: bold; }
+  .highlight .chroma .gs {
+    font-weight: bold; }
+  .highlight .chroma .gu {
+    font-weight: bold; }
+  @media (prefers-color-scheme: dark) {
+    .highlight {
+      /* Generated using: hugo gen chromastyles --style=base16-snazzy */
+      /* Background */
+      /* PreWrapper */
+      /* Other */
+      /* Error */
+      /* CodeLine */
+      /* LineLink */
+      /* LineTableTD */
+      /* LineTable */
+      /* LineHighlight */
+      /* LineNumbersTable */
+      /* LineNumbers */
+      /* Line */
+      /* Keyword */
+      /* KeywordConstant */
+      /* KeywordDeclaration */
+      /* KeywordNamespace */
+      /* KeywordPseudo */
+      /* KeywordReserved */
+      /* KeywordType */
+      /* Name */
+      /* NameAttribute */
+      /* NameBuiltin */
+      /* NameBuiltinPseudo */
+      /* NameClass */
+      /* NameConstant */
+      /* NameDecorator */
+      /* NameEntity */
+      /* NameException */
+      /* NameFunction */
+      /* NameFunctionMagic */
+      /* NameLabel */
+      /* NameNamespace */
+      /* NameOther */
+      /* NameProperty */
+      /* NameTag */
+      /* NameVariable */
+      /* NameVariableClass */
+      /* NameVariableGlobal */
+      /* NameVariableInstance */
+      /* NameVariableMagic */
+      /* Literal */
+      /* LiteralDate */
+      /* LiteralString */
+      /* LiteralStringAffix */
+      /* LiteralStringBacktick */
+      /* LiteralStringChar */
+      /* LiteralStringDelimiter */
+      /* LiteralStringDoc */
+      /* LiteralStringDouble */
+      /* LiteralStringEscape */
+      /* LiteralStringHeredoc */
+      /* LiteralStringInterpol */
+      /* LiteralStringOther */
+      /* LiteralStringRegex */
+      /* LiteralStringSingle */
+      /* LiteralStringSymbol */
+      /* LiteralNumber */
+      /* LiteralNumberBin */
+      /* LiteralNumberFloat */
+      /* LiteralNumberHex */
+      /* LiteralNumberInteger */
+      /* LiteralNumberIntegerLong */
+      /* LiteralNumberOct */
+      /* Operator */
+      /* OperatorWord */
+      /* Punctuation */
+      /* Comment */
+      /* CommentHashbang */
+      /* CommentMultiline */
+      /* CommentSingle */
+      /* CommentSpecial */
+      /* CommentPreproc */
+      /* CommentPreprocFile */
+      /* Generic */
+      /* GenericDeleted */
+      /* GenericEmph */
+      /* GenericError */
+      /* GenericHeading */
+      /* GenericInserted */
+      /* GenericOutput */
+      /* GenericPrompt */
+      /* GenericStrong */
+      /* GenericSubheading */
+      /* GenericTraceback */
+      /* GenericUnderline */
+      /* TextWhitespace */ }
+      .highlight .bg {
+        color: #e2e4e5;
+        background-color: #282a36; }
+      .highlight .chroma {
+        color: #e2e4e5;
+        background-color: #282a36; }
+      .highlight .chroma .err {
+        color: #ff5c57; }
+      .highlight .chroma .lnlinks {
+        outline: none;
+        text-decoration: none;
+        color: inherit; }
+      .highlight .chroma .lntd {
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+        border: 0; }
+      .highlight .chroma .lntable {
+        border-spacing: 0;
+        padding: 0;
+        margin: 0;
+        border: 0; }
+      .highlight .chroma .hl {
+        background-color: #3d3f4a; }
+      .highlight .chroma .lnt {
+        white-space: pre;
+        -webkit-user-select: none;
+        user-select: none;
+        margin-right: 0.4em;
+        padding: 0 0.4em 0 0.4em;
+        color: #7f7f7f; }
+      .highlight .chroma .ln {
+        white-space: pre;
+        -webkit-user-select: none;
+        user-select: none;
+        margin-right: 0.4em;
+        padding: 0 0.4em 0 0.4em;
+        color: #7f7f7f; }
+      .highlight .chroma .line {
+        display: flex; }
+      .highlight .chroma .k {
+        color: #ff6ac1; }
+      .highlight .chroma .kc {
+        color: #ff6ac1; }
+      .highlight .chroma .kd {
+        color: #ff5c57; }
+      .highlight .chroma .kn {
+        color: #ff6ac1; }
+      .highlight .chroma .kp {
+        color: #ff6ac1; }
+      .highlight .chroma .kr {
+        color: #ff6ac1; }
+      .highlight .chroma .kt {
+        color: #9aedfe; }
+      .highlight .chroma .na {
+        color: #57c7ff; }
+      .highlight .chroma .nb {
+        color: #ff5c57; }
+      .highlight .chroma .nc {
+        color: #f3f99d; }
+      .highlight .chroma .no {
+        color: #ff9f43; }
+      .highlight .chroma .nd {
+        color: #ff9f43; }
+      .highlight .chroma .nf {
+        color: #57c7ff; }
+      .highlight .chroma .nl {
+        color: #ff5c57; }
+      .highlight .chroma .nt {
+        color: #ff6ac1; }
+      .highlight .chroma .nv {
+        color: #ff5c57; }
+      .highlight .chroma .vc {
+        color: #ff5c57; }
+      .highlight .chroma .vg {
+        color: #ff5c57; }
+      .highlight .chroma .vi {
+        color: #ff5c57; }
+      .highlight .chroma .s {
+        color: #5af78e; }
+      .highlight .chroma .sa {
+        color: #5af78e; }
+      .highlight .chroma .sb {
+        color: #5af78e; }
+      .highlight .chroma .sc {
+        color: #5af78e; }
+      .highlight .chroma .dl {
+        color: #5af78e; }
+      .highlight .chroma .sd {
+        color: #5af78e; }
+      .highlight .chroma .s2 {
+        color: #5af78e; }
+      .highlight .chroma .se {
+        color: #5af78e; }
+      .highlight .chroma .sh {
+        color: #5af78e; }
+      .highlight .chroma .si {
+        color: #5af78e; }
+      .highlight .chroma .sx {
+        color: #5af78e; }
+      .highlight .chroma .sr {
+        color: #5af78e; }
+      .highlight .chroma .s1 {
+        color: #5af78e; }
+      .highlight .chroma .ss {
+        color: #5af78e; }
+      .highlight .chroma .m {
+        color: #ff9f43; }
+      .highlight .chroma .mb {
+        color: #ff9f43; }
+      .highlight .chroma .mf {
+        color: #ff9f43; }
+      .highlight .chroma .mh {
+        color: #ff9f43; }
+      .highlight .chroma .mi {
+        color: #ff9f43; }
+      .highlight .chroma .il {
+        color: #ff9f43; }
+      .highlight .chroma .mo {
+        color: #ff9f43; }
+      .highlight .chroma .o {
+        color: #ff6ac1; }
+      .highlight .chroma .ow {
+        color: #ff6ac1; }
+      .highlight .chroma .c {
+        color: #78787e; }
+      .highlight .chroma .ch {
+        color: #78787e; }
+      .highlight .chroma .cm {
+        color: #78787e; }
+      .highlight .chroma .c1 {
+        color: #78787e; }
+      .highlight .chroma .cs {
+        color: #78787e; }
+      .highlight .chroma .cp {
+        color: #78787e; }
+      .highlight .chroma .cpf {
+        color: #78787e; }
+      .highlight .chroma .gd {
+        color: #ff5c57; }
+      .highlight .chroma .ge {
+        text-decoration: underline; }
+      .highlight .chroma .gr {
+        color: #ff5c57; }
+      .highlight .chroma .gh {
+        font-weight: bold; }
+      .highlight .chroma .gi {
+        font-weight: bold; }
+      .highlight .chroma .go {
+        color: #43454f; }
+      .highlight .chroma .gs {
+        font-style: italic; }
+      .highlight .chroma .gu {
+        font-weight: bold; }
+      .highlight .chroma .gl {
+        text-decoration: underline; } }
 .footer {
   width: 100%;
   text-align: center;
