@@ -45,7 +45,7 @@ View Transitions have what I like to think of as "progressively enhanced DX". In
 
 ## Quick opt-in for cross-fade
 To opt-in to the default cross-fade during page navigation, add the following to your CSS. This rule will have to be present in both the source and target pages for the browser to use it.
-```
+```css
 @view-transition {
 	navigation: auto;
 }
@@ -73,7 +73,7 @@ Prefix your &lt;custom-ident&gt; values with a double-hyphen to make it abundant
 For example, this is great for navigation between an index and subpage. This could be a photographer's gallery, navigating between thumbnail and full views, an e-commerce site navigating between search results and an item page, or navigating the articles on a blog. Running with that last example, let's see some example code.
 
 Article index page:
-```
+```html
 <ul class="list">
   <li>
     <span class="date">January 28, 2025</span>
@@ -91,7 +91,7 @@ Article index page:
 ```
 
 Article itself:
-```
+```html
 <h1 style="view-transition-name: --article-title-1">CSS View Transitions</h2>
 ```
 
@@ -123,7 +123,7 @@ As you venture beyond the default user-agent transitions, it'll become important
 ```
 
 And its helpful to know the default styling so you can reason about your changes. Here's a handy reference of those user-agent styles.
-```
+```css
 html::view-transition {
   position: fixed;
   inset: 0;
@@ -203,7 +203,7 @@ caption="With the same aspect ratio, the scale-and-translate cross-fade animatio
 #### Changing animation properties (duration, timing-function, etc.)
 Each `::view-transition-old(<custom-ident>)` and `::view-transition-new(<custom-ident>)` animate concurrently, but as we see from the user-agent styles above, the `animation-duration` and `animation-fill-mode` are set on the `::view-transition-group` and inherited by the -old and -new pseudo elements. In most cases, each should have the same duration, so you can apply your own duration to the group.
 
-```
+```css
 ::view-transition-group(*) {
   animation-duration: .5s;
 }
@@ -216,7 +216,7 @@ Here's an example where page navigation looks like a 3d card flip.
 * The -old and -new pseudo elements also need different `animation-name` values, because we want the old content to start in view and rotate out of view to the left, while the new content starts on the right side of the cube and rotates into view.
 * The -old content needs to be top of the z-order to start, then switch to the bottom after 50%.
 
-```
+```css
 @view-transition {
     navigation: auto;
 }
@@ -280,9 +280,9 @@ By default, if a view-transition-name appears in both the old and new snapshot, 
 
 But what if you want to target a specific case to supply your own customizations? The view-transition-new/old selector can special-case for `only-child`. For example:
 
-```
+```css
 ::view-transition-new(<custom-ident>:only-child) {
-  // yada yada...
+  /* yada yada... */
 }
 ```
 
