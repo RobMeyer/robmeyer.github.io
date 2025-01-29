@@ -281,7 +281,9 @@ By default, if a view-transition-name appears in both the old and new snapshot, 
 But what if you want to target a specific case to supply your own customizations? The view-transition-new/old selector can special-case for `only-child`. For example:
 
 ```
-::view-transition-new()
+::view-transition-new(<custom-ident>:only-child) {
+  // yada yada...
+}
 ```
 
 # Resources
