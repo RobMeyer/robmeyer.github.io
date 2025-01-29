@@ -1,0 +1,5 @@
+{{ with .Get "featureId" }}
+<baseline-status featureId="{{ . }}"></baseline-status>
+{{ else }}
+{{ errorf "The %q shortcode requires a 'featureId' argument. See %s" .Name .Position }}
+{{ end }}

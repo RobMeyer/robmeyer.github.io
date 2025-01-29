@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2021-08-27T11:12:33-07:00
+date = 2021-08-27
 title = "Coming soon, perhaps"
 description = ""
 slug = ""

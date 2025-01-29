@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2024-01-24T11:12:33-07:00
+date = 2024-01-24
 title = "Web Dev Reference"
 description = ""
 slug = ""
@@ -167,7 +167,10 @@ See also [Optimizing frontend builds with vite](https://sorbx64.hashnode.dev/opt
   * [Svgomg [My fork]](https://svgomg.robmeyer.net) - My fork has an updated svgo dependency, no advertisements blocking critical UX and, IMO, improved layout. Or use the [official SVGOMG](https://svgomg.net/).
 * [Google Fonts](https://fonts.google.com)
 * [Josh Comeau's Gradient Generator](https://www.joshwcomeau.com/gradient-generator/)
+* [Easing Wizard](https://easingwizard.com/) - Preview and generate CSS animation timing functions
 * [Tabler Icons](https://tablericons.com/) - Thousands of SVG icons offering copy-to-clipboard ready snippets for the raw SVG contents or Data URI. I wish the React and Vue options provided the code rather than adding a dependency
+* Misc. in-browser tools
+  * [URL-encoder for SVG](https://yoksel.github.io/url-encoder/) - Easily encode SVG XML for CSS data:image
 * Browser support
    * [Can I use](https://caniuse.com/) - Check for browser support before using a new feature.
    * [Web Platform Status](https://webstatus.dev/) - See the Baseline YYYY lists, as well as Top CSS/HTML Interop issues.

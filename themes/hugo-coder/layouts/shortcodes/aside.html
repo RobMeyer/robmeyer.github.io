@@ -1,0 +1,15 @@
+{{ if not (.Get "type") }}
+{{ errorf "The %q shortcode requires a 'type' argument equal to one of 'none' | 'tip' | 'best-practice'. See %s" .Name
+.Position }}
+{{ end }}
+{{ if not (.Get "title") }}
+{{ errorf "The %q shortcode requires a 'title' argument. See %s" .Name .Position }}
+{{ end }}
+<aside data-type="{{ .Get "type" }}">
+    <span class="header">
+        <div class="icon" style="mask: url(/images/aside-{{ .Get "type" }}.svg)"></div>
+        <h1>{{ .Get "title" }}</h1>    
+    </span>
+    
+    <div>{{ .Inner }}</div>
+</aside>

@@ -9,7 +9,7 @@
       <h1 class="title">{{ .Title }}</h1>
     </header>
 
-    <ul>
+    <ul class="list">
       {{- range .Paginator.Pages -}}
       {{- .Render "li" -}}
       {{- end -}}
