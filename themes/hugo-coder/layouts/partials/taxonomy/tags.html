@@ -1,5 +1,5 @@
 <div class="tags">
   {{- range $index, $el := . -}}
-  <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+    <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
   {{- end -}}
 </div>

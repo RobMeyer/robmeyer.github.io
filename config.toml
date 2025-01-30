@@ -39,7 +39,8 @@ pygmentsUseClasses            = true
     description = "Rob Meyer's personal website"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
-    favicon = "/images/favicon.ico"
+    favicon = "favicon.ico"
+    baselineStatusWebComponentScriptUrl = "script/baseline-status.min.js"
 
  #   footercontent = "Enter a text here."
 
