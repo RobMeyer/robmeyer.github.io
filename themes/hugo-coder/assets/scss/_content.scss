@@ -38,6 +38,17 @@
         }
       }
     }
+
+    .tags a {
+      font-size: var(--text-size-5);
+      line-height: var(--line-height-5);
+
+      padding: .6rem;
+      margin: .3rem;
+      border-radius: .5rem;
+      background-color: var(--tag-bg);
+      color: var(--tag-fg);
+    }
   }
 
   // figure {

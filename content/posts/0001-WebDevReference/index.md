@@ -2,10 +2,10 @@
 draft = false
 date = 2024-01-24
 title = "Web Dev Reference"
-description = ""
+description = "Consolidated reference materials "
 slug = ""
 authors = []
-tags = []
+tags = ["Web", "Reference"]
 categories = []
 externalLink = ""
 series = []

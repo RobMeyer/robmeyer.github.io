@@ -2,10 +2,10 @@
 draft = false
 date = 2025-01-28
 title = "CSS View Transitions"
-description = ""
+description = "There's so much to love about CSS View Transitions. Start here to learn about them and learn how to avoid common pitfalls."
 slug = ""
 authors = []
-tags = []
+tags = ["Web", "CSS", "Animation"]
 categories = []
 externalLink = ""
 series = []

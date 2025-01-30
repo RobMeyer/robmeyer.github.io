@@ -18,6 +18,8 @@
     --aside-tip-border: #417f3e;
     --aside-best-practice-bg: #f8f8ee;
     --aside-best-practice-border: #fff700;
+    --tag-bg: #d9e9f8;
+    --tag-fg: #1565c0;
 
     // dark mode overrides
     @media (prefers-color-scheme: dark) {
@@ -35,6 +37,8 @@
         --aside-tip-border: #417f3e;
         --aside-best-practice-bg: #484800;
         --aside-best-practice-border: #fff700;
+        --tag-bg: #0c2848;
+        --tag-fg: #c8c8ec;
     }
 
     // Type scale (Base Size 16, Scale Ratio 1.250 Major third, Line height 1.125x
