@@ -1,2 +1,5 @@
 .config_env.bat
 .DS_Store
+
+# hugo build output
+public
