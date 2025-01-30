@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CSS on Rob Meyer</title><link>https://robmeyer.net/tags/css/</link><description>Recent content in CSS on Rob Meyer</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://robmeyer.net/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS View Transitions</title><link>https://robmeyer.net/2025/01/0002-cssviewtransitions/</link><pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate><guid>https://robmeyer.net/2025/01/0002-cssviewtransitions/</guid><description>&lt;ul>
+&lt;li>&lt;a href="#overview">Overview&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#progressively-customizable">Progressively customizable&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#quick-opt-in-for-cross-fade">Quick opt-in for cross-fade&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#refine-by-connecting-elements-for-continuity">Refine by connecting elements for continuity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customizing-transitions">Customizing Transitions&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#background">Background&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#common-recipes">Common Recipes&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#fixing-aspect-ratio-issues">Fixing aspect ratio issues&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#changing-animation-properties-duration-timing-function-etc">Changing animation properties (duration, timing-function, etc.)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customizing-transition-when-view-transition-pair-only-contains-one-child">Customizing transition when view-transition-pair only contains one child&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#resources">Resources&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="overview">Overview&lt;/h1>
+&lt;p>I&amp;rsquo;ve been playing around with &lt;a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API">view-transitions&lt;/a> and I&amp;rsquo;m smitten. There&amp;rsquo;s just so much to love 😍&lt;/p>
+&lt;ul>
+&lt;li>Perfect example of a progressive enhancement&lt;/li>
+&lt;li>Supported in both cross-document and same-document environments&lt;/li>
+&lt;li>No JavaScript needed for cross-document (aka page navigation) animations&lt;/li>
+&lt;li>Comes with great defaults, &lt;a href="#progressively-customizable">progressively customizable&lt;/a>
+&lt;ul>
+&lt;li>One-liner to &lt;a href="#quick-opt-in-for-cross-fade">opt-in&lt;/a> to the default (cross-fade) transition&lt;/li>
+&lt;li>Two-liner to &lt;a href="#refine-by-connecting-elements-for-continuity">refine by connecting elements for continuity&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customizing-transitions">Tweak or fully customize&lt;/a> the animation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>More awesomeness to come. View transitions are being actively developed.
+&lt;ul>
+&lt;li>Safari and Firefox support are in the works. All the animations on this site worked great on Safari Technology Preview Release 212. No ETA from Firefox, but here&amp;rsquo;s the &lt;a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1823896">Bugzilla ticket&lt;/a>.&lt;/li>
+&lt;li>No promises here, but &lt;a href="https://drafts.csswg.org/css-view-transitions-2/">view-transitions-2&lt;/a> may include scoped transitions (&lt;code>element.startViewTransition&lt;/code> instead of &lt;code>document.startViewTransition&lt;/code>), cross-origin transitions, naming snapshots, and more.&lt;/li>
+&lt;li>Additionally, other CSS features such as advanced &lt;code>attr&lt;/code> support can simplify setting &lt;code>view-transition-name&lt;/code> in some cases.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="support----omit-in-toc---">Support &lt;/h2>
+
+&lt;baseline-status featureId="view-transitions">&lt;/baseline-status>
+
+&lt;h1 id="progressively-customizable">Progressively customizable&lt;/h1>
+&lt;p>View Transitions have what I like to think of as &amp;ldquo;progressively enhanced DX&amp;rdquo;. In the same way that a proper progressive enhancement guarantees essential behavior [to the end-user] while providing the best possible experience as supported capabilities become available, the View Transition API can be incrementally adopted for more refined experience. The Developer Experience follows a gradual curve where you can put in as much or as little effort as required to refine the end result. The subsections below explore this continuum.&lt;/p></description></item></channel></rss>
