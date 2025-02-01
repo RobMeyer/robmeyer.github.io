@@ -55,30 +55,41 @@ pygmentsUseClasses            = true
     custom_css = []
 
 # Social links
+
+#[[params.social]]
+#    name = "RSS"
+#    icon = "icon icon-rss"
+#    weight = 1
+#    url = "/posts/index.xml"
+[[params.social]]
+    name = "Bluesky"
+    icon = "icon icon-bluesky"
+    weight = 2
+    url = "https://bsky.app/profile/robmeyer.net"
 [[params.social]]
     name = "Github"
-    icon = "👨🏻‍💻 Github"
-    weight = 1
+    icon = "icon icon-github"
+    weight = 3
     url = "https://github.com/robmeyer/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "📄 LinkedIn"
-    weight = 2
+    icon = "icon icon-linkedin"
+    weight = 4
     url = "https://www.linkedin.com/in/rob-meyer/"
 [[params.social]]
     name = "Instagram"
-    icon = "📸 Instagram"
-    weight = 2
+    icon = "icon icon-instagram"
+    weight = 5
     url = "https://www.instagram.com/robmeyer/"
 [[params.social]]
     name = "Strava"
-    icon = "🚲 Strava"
-    weight = 2
+    icon = "icon icon-strava"
+    weight = 6
     url = "https://www.strava.com/athletes/6106508"
 [[params.social]]
     name = "Thingiverse"
-    icon = "🛠️ Thingiverse"
-    weight = 2
+    icon = "icon icon-thingiverse"
+    weight = 7
     url = "https://www.thingiverse.com/RobMeyer/about"
 
 # Menu links

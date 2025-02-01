@@ -194,11 +194,11 @@
       li {
         display: inline-block;
         position: relative;
+        margin-left: 1.0rem;
+        margin-right: 1.0rem;
 
         a {
           color: var(--fg-color);
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
           font-size: 1.6rem;
 
           &:hover,

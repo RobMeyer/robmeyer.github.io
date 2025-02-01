@@ -5,6 +5,7 @@
       <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
       {{ end }}
       <h1>{{ .Site.Params.author }}</h1>
+
       <p>👋 Hi there, welcome to my little corner of the internet.</p>
     </div>
   </div>
@@ -12,17 +13,10 @@
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort . "weight" }}
-      {{ if .icon }}
       <li>
         <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
-          }}target="{{ .target }}" {{ end }} {{ if .type }}type="{{ .type }}" {{ end }}>{{ .icon }}</a>
+          }}target="{{ .target }}" {{ end }} {{ if .type }}type="{{ .type }}" {{ end }}>{{ if .icon }}<span class="{{ .icon }}" aria-hidden="true"></span>{{ end }}<span>{{ .name }}</span></a>
       </li>
-      {{ else }}
-      <li>
-        <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
-          }}target="{{ .target }}" {{ end }}>{{ .name }}</a>
-      </li>
-      {{ end }}
       {{ end }}
     </ul>
     {{ end }}
