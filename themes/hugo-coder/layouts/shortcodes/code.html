@@ -1,0 +1,10 @@
+{{ if not (.Get "summary") }}
+{{ errorf "The %q shortcode requires a 'summary' argument. See %s" .Name .Position }}
+{{ end }}
+
+<details>
+    <summary>{{ .Get "summary" }}</summary>
+    <div class="code">
+        {{ .Inner | markdownify }}
+    </div>
+</details>

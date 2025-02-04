@@ -8,8 +8,12 @@
 <aside data-type="{{ .Get "type" }}">
     <span class="header">
         <div class="icon" style="mask: url(/images/aside-{{ .Get "type" }}.svg)"></div>
-        <h1>{{ .Get "title" }}</h1>    
+        <h1>{{ .Get "title" }}</h1>
     </span>
-    
+
+    {{ if eq (.Get "innertype") "markdown" }}
+    <div>{{ .Inner | markdownify }}</div>
+    {{ else }}
     <div>{{ .Inner }}</div>
+    {{ end }}
 </aside>

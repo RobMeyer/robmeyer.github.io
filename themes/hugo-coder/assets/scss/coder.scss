@@ -1,5 +1,6 @@
 @import "variables";
 @import "base";
+@import "details";
 @import "icons";
 @import "content";
 @import "navigation";
@@ -7,3 +8,9 @@
 @import "chroma";
 @import "footer";
 @import "home";
+
+// shortcodes
+@import "shortcode-aside";
+@import "shortcode-baseline-status";
+@import "shortcode-captioned-image";
+@import "shortcode-code";

@@ -14,10 +14,12 @@
   }
 
   a {
+    transition: color .2s linear;
 
     &:hover,
     &:focus {
-      color: var(--link-color)
+      color: var(--alt-fg-color);
+      text-decoration: none;
     }
   }
 
@@ -37,16 +39,22 @@
       margin: 0;
       position: relative;
 
-
       a,
       span {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
       }
 
-      a:hover {
-        color: var(--fg-color);
+      a,
+      a:visited {
         text-decoration: none;
+        color: var(--fg-color);
+        transition: color .2s linear;
+      }
+
+      a:hover,
+      a:focus {
+        color: var(--alt-fg-color);
       }
 
       .navigation-link.active::before {

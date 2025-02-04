@@ -1,7 +1,15 @@
-.highlight {
-    // Manually darkened the colors from the dark mode base16-snazzy theme
+:root {
     --chroma-fg: #212121;
     --chroma-bg: #fff;
+
+    @media only screen and (prefers-color-scheme: dark) {
+        --chroma-fg: #e2e4e5;
+        --chroma-bg: #282a36;
+    }
+}
+
+.highlight {
+    // Manually darkened the colors from the dark mode base16-snazzy theme
     --chroma-line-highlight-bg: #c1c0c0;
     --chroma-err: #f0534e;
     --chroma-proper-noun: #f0534e;
@@ -20,8 +28,6 @@
 
     @media (prefers-color-scheme: dark) {
         /* Dark mode colors from chromastyles base16-snazzy */
-        --chroma-fg: #e2e4e5;
-        --chroma-bg: #282a36;
         --chroma-line-highlight-bg: #3d3f4a;
         --chroma-err: #ff5c57;
         --chroma-proper-noun: #ff5c57;

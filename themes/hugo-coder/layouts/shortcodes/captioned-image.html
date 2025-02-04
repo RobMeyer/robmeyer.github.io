@@ -1,18 +1,22 @@
 {{ if not (.Get "src") }}
-{{ errorf "The %q shortcode requires a 'src' argument. See %s" .Name .Position }}
+    {{ errorf "The %q shortcode requires a 'src' argument. See %s" .Name .Position }}
 {{ end }}
 
 {{ if not (.Get "alt") }}
-{{ errorf "The %q shortcode requires an 'alt' argument. See %s" .Name .Position }}
+    {{ errorf "The %q shortcode requires an 'alt' argument. See %s" .Name .Position }}
 {{ end }}
 
 {{ if not (.Get "caption") }}
-{{ errorf "The %q shortcode requires a 'caption' argument. See %s" .Name .Position }}
+    {{ errorf "The %q shortcode requires a 'caption' argument. See %s" .Name .Position }}
 {{ end }}
 
 <figure class="captioned-image">
     <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" />
     <figcaption>
-        <p>{{ .Get "caption" }}</p>
+        {{ if eq (.Get "captionType") "markdown"}}
+            {{ .Get "captionType" | markdownify }}
+        {{ else }}
+        <div>{{ .Get "caption" }}</div>
+        {{ end }}
     </figcaption>
 </figure>

@@ -6,10 +6,15 @@
     mask-size: contain;
     mask-repeat: no-repeat;
     background-color: var(--fg-color);
+    transition: background-color .2s linear;
 
     // hacks to align on homepage
     margin-bottom: -2px;
     margin-right: 2px;
+
+    a:hover & {
+        background-color: var(--link-color);
+    }
 
     @media only screen and (max-width: 768px) {
         width: 1.4rem;
