@@ -42,6 +42,11 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &,
+  & * {
+    transition: color var(--transition-color-duration) linear, text-decoration var(--transition-color-duration) linear;
+  }
 }
 
 p {
@@ -130,7 +135,7 @@ strong {
 .highlight>pre {
   margin: 0;
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: var(--border-radius-medium);
   overflow-x: auto;
 }
 

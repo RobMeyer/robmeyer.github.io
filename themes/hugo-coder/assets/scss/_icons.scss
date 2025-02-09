@@ -6,7 +6,7 @@
     mask-size: contain;
     mask-repeat: no-repeat;
     background-color: var(--fg-color);
-    transition: background-color .2s linear;
+    transition: background-color var(--transition-color-duration) linear;
 
     // hacks to align on homepage
     margin-bottom: -2px;

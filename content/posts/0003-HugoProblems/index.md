@@ -402,7 +402,7 @@ I ran into two issues
 The Hugo build failed in Cloudflare's build environment. This was especially annoying because it was building fine locally and in GitHub Actions.
 
 ```bash
-	Error: error building site: "/opt/buildhome/repo/themes/hugo-coder/layouts/posts/li.html:2:1": parse failed: template: posts/li.html:2: function "hash" not defined
+Error: error building site: "/opt/buildhome/repo/themes/hugo-coder/layouts/posts/li.html:2:1": parse failed: template: posts/li.html:2: function "hash" not defined
 ```
 
 The build error checks out. I am, in fact, using `hash` in li.html. The question is, "why is this a build fail in Cloudflare but not GitHub Actions?"
@@ -436,7 +436,7 @@ hugo -b $CF_PAGES_URL --minify
 ```
 
 ## Polyfill.io
-At some point while diagnosing unrelated issues, I saw a console error about a 404 trying to request javascript from polyfill.io. It was trying to fetch es6 polyfills, which I was pretty sure I didn't need anymore -- made a mental note to follow that lead later, but first: I tried to go to polyfill.io and got a `Hmmm... can't reach that page [DNS_PROBE_FINISHED_NXDOMAIN]` error, then searched the web and, oh joy, the first search result was "Remove Polyfill.io code from your website immediately".
+At some point while diagnosing unrelated issues, I saw a console error about a 404 trying to request javascript from polyfill.io. It was trying to fetch es6 polyfills, which I was pretty sure I didn't need anymore -- made a mental note to follow that lead later, but first: I tried to go to polyfill.io and got a `Hmmm... can't reach that page [DNS_PROBE_FINISHED_NXDOMAIN]` error, then searched the web and, oh joy, the first search result was "Remove Polyfill.io code from your website immediately!" Apparently, the domain now has a potentially-untrustworthy owner, so there's risk of malicious js getting served up in the future. A good reminder to host your own script when possible and only embed third-party-hosted script from trustworthy and financially secure companies.
 
 I searched my repository and, lo and behold, there was a polyfill.io. I'm surprised GitHub never added a codescan and automatic alert about this one. Good news, Cloudflare mitigated this automatically for all sites hosted on their CDN, which appears to include GitHub Pages.
 
@@ -449,11 +449,7 @@ This last set of things aren't necessarily Hugo's fault, but they are nonetheles
 To each their own, but I've always found it gauche to present the user with a light/dark mode switcher. I want to support both views out of respect for the user's preference, but I don't need to shout off the rooftop, "Look at me, I built a website that has supports two palettes!". I went over my preferred light and dark mode CSS pattern above. This item only required deleting a JavaScript file and a little html toggle switch that appeared in the bottom-right corner of the page.
 
 ## Simplify Light/Dark Color CSS
-Hugo Coder was built with SCSS and used $variables (not to be confused with CSS --variables) to support light and dark mode themes. The problem with using SCSS variables is that you end up needing to pick a default theme whose colors are referenced in the "base" CSS, then conditionally add "override" CSS stylesheets to the document with selectors that override these colors with a second set of colors. This also breaks co-location of styles -- whenever you introduce a new style rule with a color, you need to open a different file to introduce the override rule.
-
-But, there's a better way. CSS Variables and media queries simplify all of this complexity.
-* There's only one stylesheet for the browser to load.
-* CSS rules only need to set a given color property once (e.g.`color`, `background-color`, `border-color`) you only need to 
+Hugo Coder was built with SCSS and used $variables (not to be confused with CSS `--variables`) to support light and dark mode themes. This pattern complicated the theme's SCSS and resulted in multiple css files being downloaded by the client. I discussed my preferred theme pattern [above](#code-snippet-light-and-dark-mode-syntax-highlighting), so I'll refrain from going over it again.
 
 ## Rolled my own SVG Icons
 

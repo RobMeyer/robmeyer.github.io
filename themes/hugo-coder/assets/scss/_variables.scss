@@ -61,4 +61,9 @@
     --text-size-6: 1rem;
     --line-height-6: 1.125rem;
 
+    --border-radius-small: .5rem; // e.g. #tags
+    --border-radius-medium: 1rem; // e.g. content sections such as aside, code snippet
+
+    --transition-color-duration: .1s;
+    --transition-large-layout-shift-duration: .5s;
 }

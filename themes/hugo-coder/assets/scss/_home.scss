@@ -13,21 +13,14 @@ a.nav {
         margin: 0 4px 0 4px;
     }
 
-    & .emoji {
-        background-color: var(--bg-light-color);
-        border-radius: 50%;
-        padding: 6px;
-        margin: 4px 4px 4px 0;
-    }
-}
+    &:hover {
+        color: #134;
+        box-shadow: 2px 2px var(--alt-fg-color);
+        border-bottom: 3px solid var(--alt-fg-color);
+        text-decoration: none;
 
-a.nav:hover {
-    color: #134;
-    box-shadow: 2px 2px var(--alt-fg-color);
-    border-bottom: 3px solid var(--alt-fg-color);
-    text-decoration: none;
-
-    &:visited {
-        color: var(--alt-fg-color);
+        &:visited {
+            color: var(--alt-fg-color);
+        }
     }
 }

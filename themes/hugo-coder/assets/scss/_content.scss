@@ -45,7 +45,7 @@
 
       padding: .6rem;
       margin: .3rem;
-      border-radius: .5rem;
+      border-radius: var(--border-radius-small);
       background-color: var(--tag-bg);
       color: var(--tag-fg);
     }
