@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2025-02-09
+date = 2025-02-10
 title = "Stylize Chroma Const Colors"
 description = "Script to style css color values in Chroma-generated code blocks"
 slug = ""
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Installation
 * Put [stylize-chroma-const-colors.ts](stylize-chroma-const-colors.ts) in `/assets/ts`
-* Added script tag to `themes/hugo-coder/layouts/_default/baseof.html`. Note that Hugo is compiling the TypeScript to js and minifying it for me.
+* Added script tag to `themes/hugo-coder/layouts/_default/baseof.html`. Note that Hugo is compiling the TypeScript to js and minifying it for me ==> 4.6 kB minified js, 2.5 kB brotli compressed. 
   ```
   {{ $stylizeChromaConstColors := resources.Get "ts/stylize-chroma-const-colors.ts" | js.Build | minify }}
   <script src="{{ $stylizeChromaConstColors.RelPermalink }}" defer></script>
