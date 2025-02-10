@@ -134,15 +134,11 @@
 
         a {
           color: var(--fg-color);
-          font-size: 1.6rem;
+          font-size: var(--text-size-4);
 
           &:hover,
           &:focus {
             color: var(--link-color);
-          }
-
-          @media only screen and (max-width : 768px) {
-            font-size: 1.4rem;
           }
 
           i {

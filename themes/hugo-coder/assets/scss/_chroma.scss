@@ -57,6 +57,7 @@
     .chroma {
         color: var(--chroma-fg);
         background-color: var(--chroma-bg);
+        line-height: 1.6em;
 
         /* Error */
         .err {
