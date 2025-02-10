@@ -12,9 +12,9 @@ series = []
 +++
 
 # The problem
-Hugo uses Chroma to convert markdown code blocks into html at build time. Chroma's styling system is customizable, but it isn't flexible enough to support this use-case -- when a code snippet references a hex or rgb() color, I'd like to style it with a background color indicating the color being referenced, and the text color should be either black or white (whichever has better contrast with the background). 
+[Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize) is one of my must-have VS Code extensions. Unfortunately, this extension doesn't help with code snippets here, on my website. Hugo uses [Chroma](https://github.com/alecthomas/chroma) to convert markdown code blocks into html at build time and there are a ton of [styles to choose from](https://xyproto.github.io/splash/docs/). Chroma's styling system is customizable too, but it isn't flexible enough to support this use-case with custom CSS alone. Chroma's output can be configured to directly apply styles inline or you can generate (or write your own) stylesheet and the generated html will reference well-known classnames. Unfortunately, what I'd need is for the HTML to include a new attribute
 
-I could probably achieve this by writing a custom lexer for Chroma, which instead of encoding `#ff0000` as `<span class="mh">#ff0000</span>`, it would write the CSS color value to a data-color attribute like `<span data-color="#ff0000" class="mh">#ff0000</span>`, which would allow me to use the new `attr` like:
+I could probably achieve this by writing a custom lexer for Chroma. Instead of encoding `#ff0000` as `<span class="mh">#ff0000</span>`, it could write the CSS color value to a data-color attribute like `<span data-color="#ff0000" class="mh">#ff0000</span>`. This, plus one of my favorite new CSS features, `attr` allows me to style the background and foreground colors based on the data-color attribute's value:
 
 ```css
 .mh[data-color] {
@@ -26,6 +26,12 @@ I could probably achieve this by writing a custom lexer for Chroma, which instea
 }
 ```
 
+I'm also using `contrast-color` in that snippet, which doesn't exist today. From my sleuthing, it sounds like Safari implemented it as an experimental feature, it was at one point documented on MDN, other browsers didn't follow suite, and the MDN link was broken. It appears in in the CSS Working Group's [DRAFT: CSS Color Module Level 6](https://drafts.csswg.org/css-color-6/#colorcontrast) now. Until then, perhaps I could whip something up with a mix-blend-mode. Or worst-case, my custom lexer could add a data-color-contrast property at build time.
+
+But, I don't want to write a lexer and fork myself from the safe defaults. I bet I could make a "good enough" solution with a little JavaScript...
+
+## The solution
+The solution I landed on is a little JavaScript that looks for well-formed color values and when it finds one, calculates the best contrasting foreground color and applies an inline style to the DOM element.
 
 ## Show me the code!
 
@@ -317,8 +323,7 @@ Yay, the foreground color is appropriately switching between white and black, de
 But, this points out a problem -- Chroma's css lexer treats the rgb and rgba expressions as a function call with parameters rather than a value. I may write a more sophisticated chunk of code that looks for this specific DOM structure, but it doesn't sound fun. Since the background color should only be applied to the rgb value text, not the "--rgb:" css variable declaration on the same line, these 8 span elements need to be given a new parent node.
 ![DevTools showing the DOM structure for 'rgb(0, 119, 182)' contains 8 separate span nodes for each piece of text: "rgb", left paren, zero, comma, one hundred nineteen, comma, one hundred eighty two, and right paren."](rgb-dom.png)
 
-
-### html
+### HTML
 ```html
 <html>
   <body style="color: #fff; background-color: #2a2a2a">
