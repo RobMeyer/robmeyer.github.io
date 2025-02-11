@@ -3,7 +3,7 @@
 ## Mondrianish
 
 {{< captioned-image
-src="mondrianish.jpg"
+src="mondrianish2.jpg"
 alt="Screenshot of an in-browser 3D art museum featuring Mondrian style artwork"
 caption="[mondrianish.robmeyer.net](https://mondrianish.robmeyer.net)"
 captionType="markdown"
