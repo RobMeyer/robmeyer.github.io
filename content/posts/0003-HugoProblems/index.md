@@ -18,7 +18,7 @@ I chose the [hugo-coder](https://github.com/luizdepra/hugo-coder) theme when I f
 
 Anyways, as this story goes, even though I wasn't personally experiencing any performance issues, nor were any of my **zero** daily visitors, my curiosity led me to put it under the performance microscope for fun. As any self-respecting performance engineer would do, I rolled up my sleeves, opened DevTools, disabled my network cache, reloaded my website, and skimmed the status bar summary...
 
-```
+```bash
 10 requests | 346 kB transferred | 473 kB resources
 ```
 
@@ -39,7 +39,9 @@ Possible solutions
 * I tried installing `Twig Formatter`, `PHP Twig`, `Twig Language`, and `Twig Language 2` VS Code extensions, setting my document Language Mode to `HTML (twig)`. This stopped the automatic format on save, but oddly VS Code likes to forget the language mode after a few minutes.
 
 # Code snippet syntax highlighting
-One great thing about Hugo is compile-time code syntax highlighting. Visitors shouldn't need their browser to download and run JavaScript to syntax highlight code snippets. But, I found that it wasn't syntax highlighting my HTML and CSS snippets. First, I went down a rabbit-hole checking that my `config.toml` was properly configured for `markup.highlight`, which was actually non-trivial because I "ejected" from hugo-coder many Hugo versions ago and am using some configuration keys that are still supported but likely on the path to deprecation. Next I looked at the available Chroma themes and went down a light+dark mode side quest (more on that later). Finally, I remembered that markdown supports a way to hint which language the code snippet is in. Triple-backtick alone is a generic code snippet:
+One great thing about Hugo is compile-time code syntax highlighting. Visitors shouldn't need their browser to download and run JavaScript to syntax highlight code snippets. But, I found that it wasn't syntax highlighting my HTML and CSS snippets. First, I went down a rabbit-hole checking that my `config.toml` was properly configured for `markup.highlight`, which was actually non-trivial because I "ejected" from hugo-coder many Hugo versions ago and am using some configuration keys that are still supported but likely on the path to deprecation. Next I looked at the available Chroma themes and went down a light+dark mode side quest (more on that later). 
+
+Finally, I remembered that markdown supports a way to hint which language the code snippet is in. Triple-backtick alone is a generic code snippet. Instead of the following:
 
 ````
 ```

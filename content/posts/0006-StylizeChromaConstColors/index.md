@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', stylizeChromaConstColors);
 ## Installation
 * Put [stylize-chroma-const-colors.ts](stylize-chroma-const-colors.ts) in `/assets/ts`
 * Added script tag to `themes/hugo-coder/layouts/_default/baseof.html`. Note that Hugo is compiling the TypeScript to js and minifying it for me ==> 4.6 kB minified js, 2.5 kB brotli compressed. 
-  ```
+  ```twig
   {{ $stylizeChromaConstColors := resources.Get "ts/stylize-chroma-const-colors.ts" | js.Build | minify }}
   <script src="{{ $stylizeChromaConstColors.RelPermalink }}" defer></script>
   ```
@@ -331,7 +331,7 @@ But, this points out a problem -- Chroma's css lexer treats the rgb and rgba exp
 (Also a bummer ... Chroma's html lexer doesn't parse individual css properties within a literal string, which now that I think about it makes sense, but points out the limitations of my approach.)
 
 ### JavaScript
-```
+```javascript
 const hex = '#0077b6';
 const hexWithAlpha = '#0077b680';
 const hexShort = '#08b';

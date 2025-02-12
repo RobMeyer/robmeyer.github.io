@@ -25,7 +25,7 @@ I have a bunch of bookmarks of reference materials. I'll try to consolidate and 
 # [How to Favicon in 2024](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
 
 ## HTML <!-- omit in toc -->
-```
+```html
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
@@ -35,7 +35,7 @@ I have a bunch of bookmarks of reference materials. I'll try to consolidate and 
 ```
 
 And, again optionally, in that `manifest.webmanifest`, you'll want the following.
-```
+```json
 {
   "icons": [
     { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
@@ -60,7 +60,7 @@ Here are some popular ones
 
 
 And for what it's worth, here's mine (mostly Josh Comeau's)
-```
+```css
 /* Opt-in to page navigation animations */
 @view-transition {
   navigation: auto;
@@ -76,7 +76,7 @@ And for what it's worth, here's mine (mostly Josh Comeau's)
   margin: 0;
 
   /* Add accessible line-height that doesn't get too large in headings */
-  line-height: calc(1em + 0.5rem);
+  /* line-height: calc(1em + 0.5rem); */
 }
 
 body {
@@ -128,12 +128,12 @@ I needed to make a form look half decent in a hurry and landed on nice-forms.css
 # vite-plugin-minify
 Vite minifies CSS and JS, but doesn't minify html out of the box. Good news, there's a quick fix.
 
-```
+```bash
 npm install vite-plugin-minify -D
 ```
 
 Add to plugins in `vite.config.ts` and make sure all your html files are listed under `build.rollupOptions.input`.
-```
+```javascript
 import { defineConfig } from 'vite'
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { resolve } from 'path';

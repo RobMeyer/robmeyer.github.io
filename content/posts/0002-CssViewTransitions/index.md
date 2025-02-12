@@ -114,7 +114,7 @@ When the user agent provided default animation isn't too your liking, you can su
 But first, it's helpful to solidify your mental model of what's happening behind the scenes. Head over to [Using the View Transition API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using), download it into your brain, then come back here.
 
 As you venture beyond the default user-agent transitions, it'll become important to know the structure of the view transition pseudo-element tree:
-```
+```bash
 ::view-transition
 └─ ::view-transition-group(root)
   └─ ::view-transition-image-pair(root)

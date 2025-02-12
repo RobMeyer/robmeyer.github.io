@@ -53,7 +53,7 @@ I removed Font Awesome from this Hugo-generated site but still wanted to use ~6 
 ```
 
 ## Usage
-```
+```html
 <span class="icon icon-rss" aria-hidden="true"></span>
 ```
 
