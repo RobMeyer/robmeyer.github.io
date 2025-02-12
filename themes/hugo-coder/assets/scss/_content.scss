@@ -160,6 +160,10 @@
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
 }
 
 @keyframes wave-animation {

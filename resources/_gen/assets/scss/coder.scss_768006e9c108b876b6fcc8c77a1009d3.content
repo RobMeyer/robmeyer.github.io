@@ -78,8 +78,9 @@
 *:before {
   box-sizing: inherit; }
 
-@view-transition {
-  navigation: auto; }
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto; } }
 
 html {
   box-sizing: border-box;
@@ -360,7 +361,9 @@ details {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block; }
-
+  @media (prefers-reduced-motion) {
+    .wave {
+      animation: none; } }
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg); }
