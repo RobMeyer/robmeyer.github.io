@@ -26,14 +26,10 @@ body {
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.8em;
-
-  @media only screen and (max-width : 768px) {
-    font-size: 1.6em;
-    line-height: 1.6em;
-  }
 }
 
 a {
+  display: inline-block;
   font-weight: 300;
   color: var(--link-color);
   text-decoration: none;
@@ -143,6 +139,10 @@ table tr th:last-child {
 
 img {
   max-width: 100%;
+}
+
+ul {
+  padding-inline-start: 2.5rem;
 }
 
 .wrapper {

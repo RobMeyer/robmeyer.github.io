@@ -95,11 +95,9 @@ body {
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.8em; }
-  @media only screen and (max-width: 768px) {
-    body {
-      font-size: 1.6em;
-      line-height: 1.6em; } }
+
 a {
+  display: inline-block;
   font-weight: 300;
   color: var(--link-color);
   text-decoration: none; }
@@ -185,6 +183,9 @@ table tr th:last-child {
 
 img {
   max-width: 100%; }
+
+ul {
+  padding-inline-start: 2.5rem; }
 
 .wrapper {
   display: flex;
@@ -282,7 +283,7 @@ details {
     font-size: var(--text-size-5);
     line-height: var(--line-height-5);
     padding: .6rem;
-    margin: .3rem;
+    margin: .7rem .4rem .3rem 0;
     border-radius: var(--border-radius-small);
     background-color: var(--tag-bg);
     color: var(--tag-fg); }
@@ -397,8 +398,8 @@ details {
       color: var(--alt-fg-color);
       text-decoration: none; }
   .navigation .navigation-title {
-    border: 0.3em solid var(--fg-color);
-    padding: .5em;
+    border: 0.3rem solid var(--fg-color);
+    padding: .5rem;
     font-size: 1.6rem;
     line-height: 1.6rem;
     text-transform: uppercase;
@@ -431,8 +432,8 @@ details {
         content: '';
         display: block;
         width: calc(100% - 2rem);
-        height: 3px;
-        border-radius: 1.5px;
+        height: .3rem;
+        border-radius: .15rem;
         background-color: var(--fg-color);
         position: absolute;
         bottom: 0;
@@ -537,7 +538,8 @@ details {
   .highlight .chroma {
     color: var(--chroma-fg);
     background-color: var(--chroma-bg);
-    line-height: 1.6em;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     /* Error */
     /* All line-related selectors:
          * .lnlinks - LineLink

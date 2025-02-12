@@ -24,8 +24,8 @@
   }
 
   .navigation-title {
-    border: .3em solid var(--fg-color);
-    padding: .5em;
+    border: .3rem solid var(--fg-color);
+    padding: .5rem;
 
     font-size: 1.6rem;
     line-height: 1.6rem;
@@ -70,8 +70,8 @@
         content: '';
         display: block;
         width: calc(100% - 2rem);
-        height: 3px;
-        border-radius: 1.5px;
+        height: .3rem;
+        border-radius: .15rem;
         background-color: var(--fg-color);
         position: absolute;
         bottom: 0;
