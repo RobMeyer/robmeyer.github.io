@@ -35,7 +35,7 @@ The solution I landed on is a little JavaScript that looks for well-formed color
 
 ## Show me the code!
 
-{{< code summary="TypeScript to querySelectorAll within Chroma code blocks for span elements with well-known class names that may contain color values, check for presence of a color value, extract and convert to RGB, determine whether white or black contrasts more, and finally set an inline style on the HTML Element." >}}
+{{< code summary="stylize-chroma-const-colors.ts" >}}
 ```typescript
 type RGB = [number, number, number];
 
@@ -275,7 +275,7 @@ function stylizeChromaConstColors() {
             try {
                 const rgb = cssColorToRGB(textContent);
                 if (rgb) {
-                    (span as HTMLSpanElement).style.backgroundColor = textContent;
+                    (span as HTMLSpanElement).style.backgroundColor = `background:rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
                     (span as HTMLSpanElement).style.color = getBestTextColor(rgb);
                 }
             } catch (e) {
@@ -286,9 +286,7 @@ function stylizeChromaConstColors() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    stylizeChromaConstColors();
-});
+document.addEventListener('DOMContentLoaded', stylizeChromaConstColors);
 ```
 {{< /code >}}
 

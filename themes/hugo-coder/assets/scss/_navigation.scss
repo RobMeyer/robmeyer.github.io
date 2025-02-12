@@ -1,5 +1,5 @@
 .navigation {
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   width: 100%;
 
@@ -24,7 +24,14 @@
   }
 
   .navigation-title {
+    border: .3em solid var(--fg-color);
+    padding: .5em;
+
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
     letter-spacing: 0.05rem;
+    font-weight: 700;
   }
 
   .navigation-list {

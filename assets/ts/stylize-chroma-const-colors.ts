@@ -247,6 +247,4 @@ function stylizeChromaConstColors() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    stylizeChromaConstColors();
-});
+document.addEventListener('DOMContentLoaded', stylizeChromaConstColors);
