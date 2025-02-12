@@ -1,6 +1,8 @@
-# Projects
+---
+title: Projects
+---
 
-## Mondrianish
+## Mondrian(ish)
 
 {{< captioned-image
 src="mondrianish2.jpg"
@@ -40,8 +42,6 @@ I quickly realized that manually scaling and aligning the cards in Photoshop to 
 
 This project was originally written in React, and I later came back and rewrote it using SolidJS because I wanted to compare and contrast the developer experience and resulting performance. At the moment, I'm loving SolidJS.
 
-P.S. For designing new cards, I highly recommend [Pokécardmaker.net](https://pokecardmaker.net/creator).
-
 ## Arrow Maze Creator
 {{< captioned-image
 src="arrow-maze-creator.jpg"
@@ -58,13 +58,14 @@ This project was an opportunity for me to check out SolidJS. I also played with 
 ## Worth the Squeeze
 🚧 Just some local code at the moment. Playing around with web assembly and image compression. Locally processed (Your data is yours! Nothing uploaded) hands-free image compressor. Tries numerous formats and quality settings to automatically find optimal compression-to-quality trade-off. Easily preview the before/after as well as a diff-overlay.
 
-Took this project as an opportunity to check out Deno, Web Assembly, and dusting off my C++ knowledge.
+I took this project as an opportunity to check out Deno, Web Assembly, and dusting off my C++ knowledge.
 
 ## SVGOMG (Fork)
 [SVGOMG Fork](https://svgomg.robmeyer.net)
 Annoyed by the obtrusive ads on the official site (which overlap critical components, breaking critical functionality), I'm self-hosting a fork.
   * Changed the page layout to make better use of available screen estate and slightly improving rendering performance.
   * Updated the svgo dep to v4.0.0-rc.1, picking up numerous bug fixes and improvements.
+
 ## Squoosh (Fork)
 Not yet published
   * Updated dependencies, addressing security warnings.
