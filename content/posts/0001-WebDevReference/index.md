@@ -2,7 +2,7 @@
 draft = false
 date = 2024-01-24
 title = "Web Dev Reference"
-description = "Consolidated reference materials "
+description = "Consolidated reference materials for web developers"
 slug = ""
 authors = []
 tags = ["Web", "Reference"]
