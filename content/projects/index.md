@@ -18,9 +18,9 @@ caption="[mondrian-svg-gen.robmeyer.net](https://mondrian-svg-gen.robmeyer.net)"
 captionType="markdown"
 >}}
 
-Built in 2021 at the peak of the NFT fad (while I was fully aware that it was a fad), this one's two projects in one!
+Built in 2021 at the peak of the NFT fad (while I was fully aware that it was a fad), this one is two projects in one!
 
-First, [mondrian-svg-gen](https://mondrian-svg-gen.robmeyer.net) is a tool to create generative art in the style of Piet Mondrian's Neoplastism works. The tool generates an SVG with the configured palette, complexity, and dimensions following a set of ratios.
+First, [mondrian-svg-gen](https://mondrian-svg-gen.robmeyer.net) is a tool to create generative art in the style of Piet Mondrian's Neoplastism works. The tool generates an SVG with the configured palette, complexity, and dimensions following a set of ratios. You can also click on borders or colored regions to cycle through presets, in case the randomly generated image is close to greatness.
 
 Written using React because that's what I was most familiar with, but it could easily be vanilla HTML+JS.
 
@@ -36,11 +36,11 @@ caption="[print-proxy-cards.robmeyer.net](https://print-proxy-cards.robmeyer.net
 captionType="markdown"
 >}}
 
-Leaning into my 6-year-old son's Pokémon addition, I discovered the much less expensive way to build decks to play the card game -- printing our own proxy cards. Actually, it started as a way for him to provide his own artwork for existing cards, and eventually, making up entirely new Pokémon cards
+While supporting my 6-year-old son's Pokémon addition, we discovered the much less expensive way to build decks to play the card game -- printing our own proxy cards. Actually, it started as a way for him to provide his own artwork for existing cards, and eventually, making up entirely new Pokémon cards.
 
-I quickly realized that manually scaling and aligning the cards in Photoshop to print 8 at a time was going to be way too time consuming, so I created this simple page to drag-and-drop files into a preset template. Configuration settings make it easy to take advantage of printers with 'print on both sides' support, or manually reload the tray between printing the front and back sides. The back side artwork is oversized ensuring that even with a little imprecision, there won't be a white gap along the unprinted edge on the backside.
+I quickly realized that manually scaling and aligning the cards in Photoshop to print 8 at a time was going to be far too time consuming, so I created this simple page to drag-and-drop files into a preset template. Configuration settings make it easy to take advantage of printers with 'print on both sides' support, or manually reload the tray between printing the front and back sides. The back side artwork is oversized ensuring that even with a little imprecision, there won't be a white gap along the unprinted edge on the backside.
 
-This project was originally written in React, and I later came back and rewrote it using SolidJS because I wanted to compare and contrast the developer experience and resulting performance. At the moment, I'm loving SolidJS.
+This project was originally written in React, and I later came back and ported it to SolidJS because I wanted to compare and contrast the developer experience and resulting performance. At the moment, I'm loving SolidJS.
 
 ## Arrow Maze Creator
 {{< captioned-image
