@@ -38,7 +38,6 @@ pygmentsUseClasses            = true
     info = "dev, cyclist, father, maker, photographer..."
     description = "Rob Meyer's personal website"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
     favicon = "favicon.ico"
     baselineStatusWebComponentScriptUrl = "script/baseline-status.min.js"
 

@@ -289,13 +289,13 @@ details {
     background-color: var(--tag-bg);
     color: var(--tag-fg); }
 
-.avatar img {
-  width: 20rem;
-  height: auto;
-  border-radius: 50%; }
-  @media only screen and (max-width: 768px) {
-    .avatar img {
-      width: 10rem; } }
+.avatar {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden; }
+
 .list .date {
   display: block;
   font-size: 1.4rem;

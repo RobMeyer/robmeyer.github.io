@@ -52,14 +52,12 @@
   }
 }
 
-.avatar img {
-  width: 20rem;
-  height: auto;
+.avatar {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-
-  @media only screen and (max-width : 768px) {
-    width: 10rem;
-  }
+  overflow: hidden;
 }
 
 .list {

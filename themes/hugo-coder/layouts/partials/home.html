@@ -1,23 +1,29 @@
 <section class="container centered">
   <div class="about" style="display: flex; flex: 100%; justify-content: center;">
     <div style="align-self: center;">
-      {{ with .Site.Params.avatarurl }}
-      <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
-      {{ end }}
-      <h1><span class="wave">👋</span> Hi there</h1>
-      <p>Welcome to my little corner of the internet.</p>
+      <div class="home">
+        <div class="avatar">
+          <picture>
+            <source srcset="images/avatar-200.avif, images/avatar-400.avif 2x" type="image/avif" />
+            <source srcset="images/avatar-200.jpg, images/avatar-400.jpg 2x" type="image/jpeg" />
+            <img src="images/avatar-200.jpg" alt="headshot of Rob Meyer, looking great in downtown Seattle" />
+          </picture>
+        </div>
+        <h1><span class="wave">👋</span> Hi there</h1>
+        <p>Welcome to my little corner of the internet.</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="about">
-    {{ with .Site.Params.social }}
-    <ul>
-      {{ range sort . "weight" }}
-      <li>
-        <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
+    <div class="about">
+      {{ with .Site.Params.social }}
+      <ul>
+        {{ range sort . "weight" }}
+        <li>
+          <a href="{{ .url }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
           }}target="{{ .target }}" {{ end }} {{ if .type }}type="{{ .type }}" {{ end }}>{{ if .icon }}<span class="{{ .icon }}" aria-hidden="true"></span>{{ end }}<span>{{ .name }}</span></a>
-      </li>
+        </li>
+        {{ end }}
+      </ul>
       {{ end }}
-    </ul>
-    {{ end }}
-  </div>
+    </div>
 </section>
