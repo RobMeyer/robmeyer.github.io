@@ -10,6 +10,7 @@ alt="Video of Cocktail Recipes webpage, featuring a skeomorphic design with a le
 caption="[cocktails.robmeyer.net](https://cocktails.robmeyer.net)"
 captionType="markdown"
 width="480px"
+height="380px"
 >}}
 
 ## Mondrian(ish)

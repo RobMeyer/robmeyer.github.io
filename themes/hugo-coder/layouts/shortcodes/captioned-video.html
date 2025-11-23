@@ -11,7 +11,7 @@
 {{ end }}
 
 <figure class="captioned-video">
-    <video controls style="width: {{ .Get "width" | default "undefined" }}">
+    <video controls style="width: {{ .Get "width" | default "undefined" }}; height: {{ .Get "height" | default "undefined" }};">
         <source src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
