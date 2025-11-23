@@ -1,0 +1,17 @@
+.content {
+    .captioned-video {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+        video {
+            object-fit: contain;
+            display: block;
+        }
+
+        figcaption {
+            background: var(--alt-bg-color);
+            padding: .5em;
+        }
+    }
+}

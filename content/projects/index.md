@@ -2,6 +2,16 @@
 title: Projects
 ---
 
+## cocktails.robmeyet.net
+
+{{< captioned-video
+src="cocktails.mp4"
+alt="Video of Cocktail Recipes webpage, featuring a skeomorphic design with a leatherbound notebook with CSS scroll-timeline page flip animations."
+caption="[Cocktail Recipes](https://cocktails.robmeyer.net)"
+captionType="markdown"
+width="480px"
+>}}
+
 ## Mondrian(ish)
 
 {{< captioned-image

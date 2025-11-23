@@ -809,6 +809,17 @@ a.nav {
     background: var(--alt-bg-color);
     padding: .5em; }
 
+.content .captioned-video {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+  .content .captioned-video video {
+    object-fit: contain;
+    display: block; }
+  .content .captioned-video figcaption {
+    background: var(--alt-bg-color);
+    padding: .5em; }
+
 .content .code {
   overflow: auto;
   max-height: 60vh; }

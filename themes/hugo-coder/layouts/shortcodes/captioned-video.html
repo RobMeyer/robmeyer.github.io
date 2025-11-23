@@ -1,0 +1,25 @@
+{{ if not (.Get "src") }}
+{{ errorf "The %q shortcode requires a 'src' argument. See %s" .Name .Position }}
+{{ end }}
+
+{{ if not (.Get "alt") }}
+{{ errorf "The %q shortcode requires an 'alt' argument. See %s" .Name .Position }}
+{{ end }}
+
+{{ if not (.Get "caption") }}
+{{ errorf "The %q shortcode requires a 'caption' argument. See %s" .Name .Position }}
+{{ end }}
+
+<figure class="captioned-video">
+    <video controls style="width: {{ .Get "width" | default "undefined" }}">
+        <source src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <figcaption>
+        {{ if eq (.Get "captionType") "markdown"}}
+        {{ .Get "caption" | markdownify }}
+        {{ else }}
+        <div>{{ .Get "caption" }}</div>
+        {{ end }}
+    </figcaption>
+</figure>
